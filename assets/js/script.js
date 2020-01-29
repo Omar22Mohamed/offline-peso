@@ -15,4 +15,22 @@ $(function () {
     $(".content-area, .sidebar").toggleClass("no-sidebar");
   });
 
+  // Date Range
+
+  $(document).ready(function(){
+    $('#input-daterange').datepicker({
+      format: "yyyy-mm-dd",
+      autoclose: true,
+      todayBtn:'linked'
+    })
+  })
+
+  /* $(document).ready(function(){
+    $('.input-daterange').datepicker({
+     todayBtn:'linked',
+     format: "yyyy-mm-dd",
+     autoclose: true
+    });
+   }); */
+
 });

@@ -28,32 +28,16 @@ input[type=submit]
  margin-top:25px;
 }
 
-.navbar-default
+.navbar
 {
   border-bottom: 5px #004580;
-} 
-
-.navbar-default .navbar-nav>li>a
-{
-  color: #FFF;
-  font-weight: bold; 
-  font-size: 25px; 
 }
 
-.navbar-default .navbar-nav>li>a:hover
+.navbar .admin-dropdown
 {
-  color: #FFF;
+  margin-right: 24px;
 }
 
-.navbar-default .navbar-nav .dropdown-menu>li>a
-{
-  transition: .5s;
-}
-
-.navbar-default .navbar-nav .dropdown-menu>li>a:hover
-{
-  margin-left: 10px;  
-}
 
 /* End General Style */
 
@@ -73,6 +57,7 @@ input[type=submit]
   color: #FFF;
   font-size: 25px;
   width: 600px;
+  height: 50px;
 }
 
 .navbar .navbar-brand img
@@ -319,4 +304,10 @@ input[type=submit]
 
 /* End Employer NSRP Form */
 /* End add-employer.php */
+
+/* Start employers-report.php */
+
+
+
+/* End employers-report.php */
 

@@ -21,7 +21,7 @@
       <li><a href="#"><i class="fa fa-plus-square" aria-hidden="true"></i> Add Applicant NSRP</a></li>
       <li><a href="add-employer.php?do=Add&userid=<?php echo $_SESSION['ID'] ?>"><i class="fa fa-plus-square" aria-hidden="true"></i> Add Employer NSRP</a></li>
       <li><a href="#"><i class="fa fa-file" aria-hidden="true"></i> Applicants Report</a></li>
-      <li><a href="#"><i class="fa fa-file" aria-hidden="true"></i> Employers Report</a></li>
+      <li><a href="employers-report.php"><i class="fa fa-file" aria-hidden="true"></i> Employers Report</a></li>
       <li><a href="#"><i class="fa fa-download" aria-hidden="true"></i> View & Download Applicant NSRP</a></li>
       <li><a href="#"><i class="fa fa-download" aria-hidden="true"></i> View & Download Employer NSRP</a></li>
       <li><a href="logout.php"><i class="fa fa-sign-out" aria-hidden="true"></i> Log out</a></li>
