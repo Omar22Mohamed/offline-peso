@@ -1,0 +1,322 @@
+/* Start General Style */
+
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  background-color: #e3e3e3;
+}
+
+input[type=submit]
+{
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.box
+{
+ width:1270px;
+ padding:20px;
+ background-color:#fff;
+ border:1px solid #ccc;
+ border-radius:5px;
+ margin-top:25px;
+}
+
+.navbar-default
+{
+  border-bottom: 5px #004580;
+} 
+
+.navbar-default .navbar-nav>li>a
+{
+  color: #FFF;
+  font-weight: bold; 
+  font-size: 25px; 
+}
+
+.navbar-default .navbar-nav>li>a:hover
+{
+  color: #FFF;
+}
+
+.navbar-default .navbar-nav .dropdown-menu>li>a
+{
+  transition: .5s;
+}
+
+.navbar-default .navbar-nav .dropdown-menu>li>a:hover
+{
+  margin-left: 10px;  
+}
+
+/* End General Style */
+
+/* Start home.php */
+/* Start Navbar */
+
+.navbar
+{
+  background-image: linear-gradient(100deg,#0070ba,#182b4f);
+  border-color: #061a64;
+  color: #FFF;
+  margin-bottom: 0;
+}
+
+.navbar .navbar-brand
+{
+  color: #FFF;
+  font-size: 25px;
+  width: 600px;
+}
+
+.navbar .navbar-brand img
+{
+  max-width: 100%;
+}
+
+.navbar .login input,
+.navbar .login .btn-danger
+{
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+
+/* End Navbar */
+
+/* Start Background Banner */
+
+.banner-header 
+{
+  width: 100%;
+  height: 610px;
+}
+
+.banner-header img
+{
+  width: 100%;
+  height: 100%;
+}
+
+/* End Background Banner */
+/* End home.php */
+
+/* Start dashboard.php */
+
+.dashboard
+{
+  min-height: 100vh;
+}
+
+.dashboard .sidebar
+{
+  width: 350px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-image: linear-gradient(100deg,#0070ba,#182b4f);
+  padding: 15px;
+  transition: 0.5s;
+}
+
+.dashboard .sidebar .logo-area
+{
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.dashboard .sidebar .links-area
+{
+  line-height: 55px;
+}
+
+.dashboard .sidebar .links-area a
+{
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  font-size: 18px;
+  transition: 0.4s;
+  position: relative;
+}
+
+.dashboard .sidebar .links-area a:hover:before
+{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #182b4f;
+}
+
+.dashboard .sidebar .links-area a:hover
+{
+  padding-left: 15px;
+}
+
+.dashboard .sidebar.no-sidebar
+{
+  left: -350px;
+}
+
+.dashboard .content-area
+{
+  width: calc(100% - 350px);
+  min-height: 100%;
+  transition: 0.5s;
+  float: right;
+  will-change: width;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.dashboard .content-area.no-sidebar
+{
+  width: 100%;
+}
+
+.dashboard .content-area .toggle-dashboard-sidebar
+{
+  cursor: pointer;
+  background-image: linear-gradient(80deg,#0070ba,#182b4f);
+  padding: 10px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.dashboard .content-area .admin-settings
+{
+  display: inline-block;
+}
+
+.dashboard .modal .modal-body .form-control
+{
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+/* End dashboard.php */
+
+/* End add-employer.php */
+/* Start Employer NSRP Form */
+
+.container
+{
+  width: 100%;
+  /*height: 70vh;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.employer-nsrp
+{
+  width: 90%;
+  height: 100%;
+  overflow-x: hidden;
+  /*overflow-y: scroll;*/
+  padding: 40px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 7px 2px 20px 2px; 
+}
+
+.employer-nsrp .the-form-header
+{
+  width: 100%;
+  border: 1px solid #000;
+  height: 115px;
+}
+
+.employer-nsrp .the-form-header .main-left-header
+{
+  padding: 10px;
+  margin-top: 11px;
+  font-weight: bold;
+}
+
+.employer-nsrp .the-form-header .main-left-header .header-left-2
+{
+  margin-left: 22px;
+}
+
+.employer-nsrp .the-form-header .main-center-header
+{
+  position: relative;
+  top: -70px;
+  left: 30%;
+}
+
+.employer-nsrp .the-form-header .main-center-header .header-center-1
+{
+  margin-left: 63px;
+}
+
+.employer-nsrp .the-form-header .main-center-header .header-center-2
+{
+  margin-left: 30px;
+}
+
+.employer-nsrp .the-form-header .main-center-header .header-center-3
+{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.employer-nsrp .the-form-header .main-center-header .header-center-4
+{
+  margin-left: 40px;
+}
+
+.employer-nsrp .establishment-details-title,
+.employer-nsrp .establishment-contact-details-title
+{
+  background-color: #46a1ef;
+  width: 100%;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.employer-nsrp .establishment-details-title span,
+.employer-nsrp .establishment-contact-details-title span
+{
+  margin-left: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.employer-nsrp .establishment-details input,
+.employer-nsrp .establishment-contact-details input
+{
+  font-weight: bold;
+}
+
+.employer-nsrp .establishment-contact-details label
+{
+  margin-right: 10px;
+}
+
+.employer-nsrp .establishment-contact-details input
+{
+  margin-right: 2.5px;
+}
+
+.employer-nsrp .establishment-contact-details .btn-primary
+{
+  margin-top: 10px;
+}
+
+/* End Employer NSRP Form */
+/* End add-employer.php */
+
