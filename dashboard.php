@@ -32,17 +32,7 @@
 
     <div class="header">
       <i class="fa fa-exchange fa-lg toggle-dashboard-sidebar"></i>
-      <div class="dropdown admin-settings">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i>
-          Settings
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Add Admin</a>
-          <a class="dropdown-item" href="#">Edit Profile</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Log Out</a>
-        </div>
-      </div>
+      
     </div>
 
     <div class="container-fluid">

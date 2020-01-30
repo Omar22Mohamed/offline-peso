@@ -99,27 +99,27 @@
 
 ?>
 
- <div class="container box">
+ <div class="container report">
   <div class="table-responsive">
     <br />
     <div class="row">
       <form method="post">
-        <div class="input-daterange">
+        <h4 class="emp-rep-title">Employers Report</h4>
+        <div class="daterange">
           <div class="col-md-10">
             <div id="input-daterange" class="input-group input-daterange">
 
-              <input type="text" name="start_date" class="form-control" placeholder="Start Date" readonly>
+              <input type="text" name="start_date" class="form-control date-from" placeholder="Start Date" readonly>
                 <?php echo $start_date_error; ?>
-                <div class="input-group-addon">to</div>
 
-              <input type="text" name="end_date" class="form-control" placeholder="End Date" readonly>
+              <input type="text" name="end_date" class="form-control date-to" placeholder="End Date" readonly>
                 <?php echo $end_date_error; ?>
 
             </div>
           </div>
         </div>
         <div class="col-md-2">
-          <button type="submit" name="export" class="btn btn-success"><i class="fa fa-file-excel-o" aria-hidden="true"> Export to Excel</button></i>
+          <button type="submit" name="export" class="btn btn-outline-success export-btn"><img src="assets/images/excel.png" class="btn-excel-img"> Export to Excel</button></img>
         </div>
       </form>
     </div>
