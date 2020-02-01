@@ -9,6 +9,18 @@
   include 'init.php';
   include 'includes/templates/header.php';
 
+  /*if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $user = $_POST['admin_name'];
+    $pass = $_POST['admin_password'];
+    $fullname = $_POST['admin_full_name'];
+  }
+
+  $stmt = $con->prepare("INSERT INTO admin(Username, Password, FullName, GroupID, Date) VALUES(:zuser, :zpass, :zfullname, 0, now()) ");
+  $stmt->execute(array(
+    'zuser'     => $user,
+    'zpass'     => sha1($pass),
+    'zfullname' => $fullname
+  ));*/
 
 ?>
 
@@ -32,7 +44,13 @@
 
     <div class="header">
       <i class="fa fa-exchange fa-lg toggle-dashboard-sidebar"></i>
-      
+        <span class="session-username">
+          <?php 
+            if (isset($_SESSION['Admin'])) {
+              echo 'Welcome ' . $_SESSION['Admin'];
+            }
+          ?>
+        </span>
     </div>
 
     <div class="container-fluid">
@@ -57,6 +75,7 @@
           <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
             <input type="text" name="admin_name" class="form-control" placeholder="Username">
             <input type="password" name="admin_password" class="form-control" placeholder="Password">
+            <input type="text" name="admin_full_name" class="form-control" placeholder="Full Name">
             <button type="button" class="btn btn-danger " data-dismiss="modal">Close</button>
             <button type="submit" class="btn btn-primary">Add</button>
           </form>

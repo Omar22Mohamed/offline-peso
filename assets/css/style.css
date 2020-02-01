@@ -191,6 +191,14 @@ input[type=submit]
   border-radius: 20px;
 }
 
+.dashboard .content-area .header .session-username
+{
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 15px;
+  color: #0070ba;
+}
+
 /* End dashboard.php */
 
 /* End add-employer.php */
