@@ -30,7 +30,7 @@
     <div class="logo-area text-center">PESO Legazpi</div>
     <ul class="links-area list-unstyled">
       <li><a href="#" data-toggle="modal" data-target="#addadminmodal"><i class="fa fa-plus-square" aria-hidden="true"></i> Add Admin</a></li>
-      <li><a href="#"><i class="fa fa-plus-square" aria-hidden="true"></i> Add Applicant NSRP</a></li>
+      <li><a href="add-applicant.php?do=Add&userid=<?php echo $_SESSION['ID'] ?>"><i class="fa fa-plus-square" aria-hidden="true"></i> Add Applicant NSRP</a></li>
       <li><a href="add-employer.php?do=Add&userid=<?php echo $_SESSION['ID'] ?>"><i class="fa fa-plus-square" aria-hidden="true"></i> Add Employer NSRP</a></li>
       <li><a href="#"><i class="fa fa-file" aria-hidden="true"></i> Applicants Report</a></li>
       <li><a href="employers-report.php"><i class="fa fa-file" aria-hidden="true"></i> Employers Report</a></li>

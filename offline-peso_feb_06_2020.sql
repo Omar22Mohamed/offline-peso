@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 01, 2020 at 11:24 AM
+-- Generation Time: Feb 06, 2020 at 08:58 AM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.1.33
 
@@ -134,8 +134,7 @@ CREATE TABLE `applicant_nsrp` (
   `TraiInstitution3` varchar(255) CHARACTER SET utf8 NOT NULL,
   `CertReceived1` varchar(255) CHARACTER SET utf8 NOT NULL,
   `CertReceived2` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `CertReceived3` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `Date` date NOT NULL
+  `CertReceived3` varchar(255) CHARACTER SET utf8 NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -197,7 +196,8 @@ CREATE TABLE `applicant_nsrp2` (
   `SewingDresses` varchar(255) CHARACTER SET utf8 NOT NULL,
   `Stenography` varchar(255) CHARACTER SET utf8 NOT NULL,
   `Tailoring` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `OtherSkill` varchar(255) CHARACTER SET utf8 NOT NULL
+  `OtherSkill` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `Date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -224,17 +224,16 @@ CREATE TABLE `employer_nsrp` (
   `Tel_No` varchar(255) CHARACTER SET utf8 NOT NULL,
   `Mob_No` varchar(255) CHARACTER SET utf8 NOT NULL,
   `Fax_No` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `Email` varchar(255) CHARACTER SET utf8 NOT NULL,
-  `Date` date NOT NULL
+  `Email` varchar(255) CHARACTER SET utf8 NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `employer_nsrp`
 --
 
-INSERT INTO `employer_nsrp` (`Emp_ID`, `Estab_Name`, `Acron_Abbrev`, `Tax_ID`, `Emp_Type`, `Total_Work`, `Line_Business`, `Address`, `Barangay`, `City_Muni`, `Province`, `Title`, `Contact_Per`, `Position`, `Tel_No`, `Mob_No`, `Fax_No`, `Email`, `Date`) VALUES
-(2, 'Super Market', 'SM', '101010', 'Private', 'Large (200 and up)', '202020', 'Street 1', '77', 'Legazpi City', 'Albay', 'Mr', 'A M O', 'HR', '', '09186455311', '656565545459898987878', 'mine@gmail.com', '2019-11-15'),
-(3, 'Super Market', 'SM', '101010', 'Private', 'Large (200 and up)', '202020', 'Street 1', '77', 'Legazpi City', 'Albay', 'Mr', 'A M O', 'HR', '', '09186455311', '656565545459898987878', 'mine@gmail.com', '2019-12-25');
+INSERT INTO `employer_nsrp` (`Emp_ID`, `Estab_Name`, `Acron_Abbrev`, `Tax_ID`, `Emp_Type`, `Total_Work`, `Line_Business`, `Address`, `Barangay`, `City_Muni`, `Province`, `Title`, `Contact_Per`, `Position`, `Tel_No`, `Mob_No`, `Fax_No`, `Email`) VALUES
+(2, 'Super Market', 'SM', '101010', 'Private', 'Large (200 and up)', '202020', 'Street 1', '77', 'Legazpi City', 'Albay', 'Mr', 'A M O', 'HR', '', '09186455311', '656565545459898987878', 'mine@gmail.com'),
+(3, 'Super Market', 'SM', '101010', 'Private', 'Large (200 and up)', '202020', 'Street 1', '77', 'Legazpi City', 'Albay', 'Mr', 'A M O', 'HR', '', '09186455311', '656565545459898987878', 'mine@gmail.com');
 
 --
 -- Indexes for dumped tables
